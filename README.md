@@ -78,13 +78,14 @@ The app allows users to input customer details and get real-time predictions thr
 ---
 
 ## 📂 Project Structure
-├── app.py                  # Streamlit app
-├── model.h5               # Trained ANN model
-├── scaler.pkl            # Feature scaler
-├── label_encoder.pkl     # Encoders
-├── requirements.txt      # Dependencies
-├── runtime.txt           # Python version (for deployment)
-├── README.md
+├── app.py
+├── model.h5
+├── scaler.pkl
+├── label_encoder.pkl
+├── ohe.pkl
+├── requirements.txt
+├── runtime.txt
+└── README.md
 
 
 ---
