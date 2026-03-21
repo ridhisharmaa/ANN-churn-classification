@@ -44,17 +44,37 @@ A machine learning web app that predicts whether a customer is likely to churn u
 
 ---
 
-## 🚀 Live App
+🚀 Live Apps
+🔸 Customer Churn Prediction
 
 🔗 https://ann-churn-classification-ygk86vidcuukae2upvzta6.streamlit.app/
 
+🔸 Salary Estimation
+
+🔗 https://ann-salary-estimation-6gc5rjwjpwa4tfvxcekerj.streamlit.app/
+
 ---
 
-## 🧠 About the Project
+🧠 About the Projects
+📌 1. Customer Churn Prediction
 
-This project uses a trained **Artificial Neural Network (ANN)** model to predict customer churn based on user input features such as credit score, geography, age, balance, etc.
+Predicts whether a customer is likely to leave a bank based on features like:
 
-The app allows users to input customer details and get real-time predictions through an interactive interface.
+Credit Score
+Geography
+Gender
+Age
+Balance
+Number of Products
+Active Status
+
+👉 Output: Churn Probability (0 or 1)
+
+📌 2. Salary Estimation
+
+Predicts the estimated salary of a customer using similar features.
+
+👉 Output: Predicted Salary Value
 
 ---
 
@@ -70,21 +90,29 @@ The app allows users to input customer details and get real-time predictions thr
 
 ## 🧩 Model
 
-- Model Type: Artificial Neural Network (ANN)
-- Framework: TensorFlow / Keras
-- Input: Customer features
-- Output: Churn probability
-
+🔹 Churn Model
+Type: ANN (Binary Classification)
+Activation: Sigmoid
+Loss: Binary Crossentropy
+🔹 Salary Model
+Type: ANN (Regression)
+Activation: Linear Output
+Loss: Mean Absolute Error (MAE)
 ---
 
 ## 📂 Project Structure
-├── app.py
-├── model.h5
-├── scaler.pkl
-├── label_encoder.pkl
-├── ohe.pkl
-├── requirements.txt
-├── runtime.txt
+├── app.py # Churn prediction app 
+├── streamlit_regression.py # Salary estimation app 
+├── model.h5 # Churn model 
+├── regression_model.h5 # Salary model 
+├── scaler.pkl 
+├── label_encoder_gender.pkl 
+├── ohe.pkl 
+├── experiments.ipynb 
+├── salaryregression.ipynb 
+├── hyperparametertuningann.ipynb 
+├── requirements.txt 
+├── runtime.txt 
 └── README.md
 
 
@@ -92,6 +120,6 @@ The app allows users to input customer details and get real-time predictions thr
 
 ## ☁️ Deployment
 
-Deployed using **Streamlit Cloud**
+Both applications are deployed using **Streamlit Cloud**.
 
 ---
