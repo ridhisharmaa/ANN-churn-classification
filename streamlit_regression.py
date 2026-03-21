@@ -57,6 +57,8 @@ encoded_geo_df=pd.DataFrame(encoded_geo, columns=ohe.get_feature_names_out(['Geo
 #combine ohe columns
 input_data=pd.concat([input_data.reset_index(drop=True),encoded_geo_df],axis=1)
 
+input_data = input_data[scaler.feature_names_in_]
+
 #scale data
 input_data_scaled=scaler.transform(input_data)
 
