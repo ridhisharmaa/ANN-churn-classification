@@ -16,6 +16,7 @@ A machine learning web app that predicts whether a customer is likely to churn a
 ---
 
 🧠 About the Projects
+
 📌 1. Customer Churn Prediction
 
 Predicts whether a customer is likely to leave a bank based on features like:
